@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.app-title{
+  order: 0;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 2em;
+  text-align: left;
+}
+.help-button{
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 10px 10px #646464;
+  background-color: #ffeeb4;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out;
+}
+.help-button i{
+  font-size: 2.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-question:before {
+  content: "\f128";
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-panels{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 5% 10%;
+    height: 600px;
+}
+.text-panel-left{
+  resize: none;
+  outline: none;
+  overflow: auto;
+  font-family: "Space Mono", monospace;
+  color: #4A4A4A;
+  border: 0;
+}
+.text-panel-right{
+  overflow: auto;
+}
+.text-panel-left, .text-panel-right {
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  box-shadow: 10px 10px #646464;
+  background-color: #FFDD67;
 }
