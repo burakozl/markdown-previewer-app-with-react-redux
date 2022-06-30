@@ -7,3 +7,4 @@ www.patika.dev frontend eğitimi kapsamında yapılmıştır.Detay linki için [
 * Redux Toolkit
 * react-markdown
 
+## [openlivepage](https://burakozel-markdownpreviewer.netlify.app/)
